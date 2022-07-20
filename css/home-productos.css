@@ -1,0 +1,72 @@
+.home__productos {
+  display: grid;
+  grid-template-areas: "rubro" "productos";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  margin: 3rem auto;
+  width: 100%;
+}
+
+.rubro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-area: "rubro";
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.home__productos-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.home__productos-vertodo {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.home__productos-cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-area: "productos";
+  width: 83%;
+  margin: 0 auto;
+}
+
+.producto {
+  display: grid;
+  grid-area: "producto";
+  grid-template-areas: "foto" "data";
+  grid-template-columns: 100%;
+  grid-template-rows: 173px auto;
+  margin-right: 1rem;
+  width: calc(15%);
+}
+
+.producto__foto {
+  grid-area: "foto";
+}
+
+.producto__data {
+  text-align: left;
+  line-height: 1.5;
+  padding: 0.5rem 0;
+}
+
+.producto__nombre {
+  color: var(--dark-gray);
+}
+
+.producto__precio {
+  font-weight: 600;
+}
+
+.producto__ver {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}

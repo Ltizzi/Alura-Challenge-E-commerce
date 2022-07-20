@@ -5,7 +5,310 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AluraGeek</title>
+    <script
+      src="https://kit.fontawesome.com/1db83e4e85.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/home-productos.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
-  <body></body>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <img
+            src="./assets/Logo.png"
+            alt="Logo AluraGeek"
+            title="Ir a home"
+            class="nav-icon"
+          />
+        </li>
+        <li class="nav-item">
+          <form action="" class="nav-form">
+            <input
+              type="text"
+              class="nav-search"
+              placeholder="¿Qué desea buscar?"
+            />
+            <button class="btn-light nav-search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+      <button class="btn nav-btn">Login</button>
+    </nav>
+    <section class="home__banner">
+      <div class="home__banner-inside">
+        <h2 class="home__banner-title">Febrero Promocional</h2>
+        <h5 class="home__banner-subtitle">
+          Productos seleccionados con 33% de descuento
+        </h5>
+        <button class="btn-blue home__banner-btn">Ver Consolas</button>
+      </div>
+    </section>
+    <section class="home__productos">
+      <div class="rubro">
+        <h2 class="home__productos-title">Star Wars</h2>
+        <p class="home__productos-vertodo">
+          Ver todo <i class="fa-solid fa-arrow-right"></i>
+        </p>
+      </div>
+      <div class="home__productos-cards">
+        <div class="producto">
+          <div class="producto__foto">
+            <img src="./assets/star-wars.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/star-wars2.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/star-wars3.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/star-wars4.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/star-wars5.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/star-wars6.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home__productos">
+      <div class="rubro">
+        <h2 class="home__productos-title">Consolas</h2>
+        <p class="home__productos-vertodo">
+          Ver todo <i class="fa-solid fa-arrow-right"></i>
+        </p>
+      </div>
+      <div class="home__productos-cards">
+        <div class="producto">
+          <div class="producto__foto">
+            <img src="./assets/console.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/console2.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/console3.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/console4.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/console5.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/console6.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home__productos">
+      <div class="rubro">
+        <h2 class="home__productos-title">Diversos</h2>
+        <p class="home__productos-vertodo">
+          Ver todo <i class="fa-solid fa-arrow-right"></i>
+        </p>
+      </div>
+      <div class="home__productos-cards">
+        <div class="producto">
+          <div class="producto__foto">
+            <img src="./assets/diversos.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/diversos2.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/diversos3.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/diversos4.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/diversos5.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="producto">
+          <div class="foto">
+            <img src="./assets/diversos6.png" alt="" />
+          </div>
+          <div class="producto__data">
+            <p class="producto__nombre">Producto XYZ</p>
+            <p class="producto__precio">$60.00</p>
+            <a class="producto__ver" href="#">Ver producto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <section class="home__contacto">
+        <div class="home__contacto-logo">
+          <img src="assets/Logo.png" alt="" />
+        </div>
+        <div class="home__contacto-list">
+          <ul class="footer__list">
+            <li class="footer__list-item">Quienes somos</li>
+            <li class="footer__list-item">Politica de privacidad</li>
+            <li class="footer__list-item">Programa de fidelidad</li>
+            <li class="footer__list-item">Nuestras tiendas</li>
+            <li class="footer__list-item">Quiero ser franquiciado</li>
+            <li class="footer__list-item">Anuncie aquí</li>
+          </ul>
+        </div>
+        <div class="home__contacto-form">
+          <form action="" class="contacto__form">
+            <h3 class="contacto__form-title">Hable con nosotros</h3>
+            <input
+              type="text"
+              class="contacto__form-nombre"
+              placeholder="nombre"
+            />
+            <textarea
+              class="contacto__mensaje"
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+            ></textarea>
+            <input
+              type="submit"
+              class="btn-blue contacto__submit"
+              value="Enviar mensaje"
+            />
+          </form>
+        </div>
+      </section>
+      <section class="footer__footer">
+        <p class="footer__by">Desarrollado por Leonardo Terlizzi</p>
+        <p class="footer__year">2022</p>
+      </section>
+    </footer>
+  </body>
 </html>

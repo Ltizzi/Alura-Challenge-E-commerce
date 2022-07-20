@@ -1,0 +1,32 @@
+:root {
+  --blue: #2a7ae4;
+  --dark-gray: #464646;
+  --light-gray: #f5f5f5;
+  --gray: #a2a2a2;
+  --light-blue: #eaf2fd;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+.hide {
+  display: none;
+  transition: 0.5s;
+}
+
+.btn-light {
+  background: transparent;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+
+  border-radius: 10px;
+}
+
+.btn-blue {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  color: white;
+
+  border-radius: 10px;
+}
