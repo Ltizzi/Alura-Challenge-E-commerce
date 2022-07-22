@@ -2,7 +2,7 @@ const productos_1 = document.querySelector("#productos_1");
 const productos_2 = document.querySelector("#productos_2");
 const productos_3 = document.querySelector("#productos_3");
 
-const starwars = [
+export const starwars = [
   "star-wars",
   "star-wars2",
   "star-wars3",
@@ -11,7 +11,7 @@ const starwars = [
   "star-wars6",
 ];
 
-const nombres_starwars = [
+export const nombres_starwars = [
   "Cenicero Stormtrooper",
   "Adorno Vader",
   "Arte Yoda",
@@ -20,9 +20,16 @@ const nombres_starwars = [
   "Arte Kylo Ren",
 ];
 
-const precios_starwars = ["10.00", "20.00", "30.00", "40.00", "50.00", "60.00"];
+export const precios_starwars = [
+  "10.00",
+  "20.00",
+  "30.00",
+  "40.00",
+  "50.00",
+  "60.00",
+];
 
-const consolas = [
+export const consolas = [
   "console",
   "console2",
   "console3",
@@ -31,7 +38,7 @@ const consolas = [
   "console6",
 ];
 
-const nombres_consolas = [
+export const nombres_consolas = [
   "Xbox gamepad",
   "PS 5",
   "Nintendo mini",
@@ -40,9 +47,16 @@ const nombres_consolas = [
   "Gameboy retro",
 ];
 
-const precios_consolas = ["10.00", "20.00", "30.00", "40.00", "50.00", "60.00"];
+export const precios_consolas = [
+  "10.00",
+  "20.00",
+  "30.00",
+  "40.00",
+  "50.00",
+  "60.00",
+];
 
-const diversos = [
+export const diversos = [
   "diversos",
   "diversos2",
   "diversos3",
@@ -51,7 +65,7 @@ const diversos = [
   "diversos6",
 ];
 
-const nombres_diversos = [
+export const nombres_diversos = [
   "Remera Atari",
   "Remera Nes",
   "Muñeco Sonic",
@@ -60,9 +74,16 @@ const nombres_diversos = [
   "Pikachu",
 ];
 
-const precios_diversos = ["10.00", "20.00", "30.00", "40.00", "50.00", "60.00"];
+export const precios_diversos = [
+  "10.00",
+  "20.00",
+  "30.00",
+  "40.00",
+  "50.00",
+  "60.00",
+];
 
-const crearProducto = (id, precio, nombre) => {
+export const crearProducto = (id, precio, nombre) => {
   const producto = document.createElement("div");
   producto.classList.add("producto");
 
