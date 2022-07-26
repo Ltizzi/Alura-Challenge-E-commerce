@@ -1,0 +1,40 @@
+.fondo {
+  background: var(--light-gray);
+}
+.producto__detalle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 7rem;
+  padding: 3rem 0;
+}
+
+.producto__detale-pic {
+  width: 50%;
+  object-fit: fill;
+}
+
+.producto__detalle-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: auto 2rem;
+  padding-bottom: 2rem;
+}
+
+.producto__detale-title {
+  font-size: 3rem;
+}
+
+.producto__detalle-precio {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.producto__detalle-parrafo {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: var(--gray);
+  font-weight: 700;
+}
