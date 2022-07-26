@@ -48,7 +48,7 @@ const crearProducto = (id) => {
   producto.classList.add("producto");
 
   producto.innerHTML = `<div class="producto__foto">
-    <img src="./assets/${objProd.picture}" alt="" />
+    <img src="./assets/${objProd.picture}" alt="imagen del producto ${objProd.nombre}" class="producto__foto-pic" />
   </div>
   <div class="producto__data" id="${objProd.id}">
     <p class="producto__nombre">${objProd.nombre}</p>

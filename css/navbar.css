@@ -53,3 +53,38 @@
   font-size: 1.1rem;
   border-radius: 10px;
 }
+
+.nav-search-btn-2 {
+  display: none;
+}
+
+.nav-btn:hover {
+  background: var(--blue);
+  color: white;
+  cursor: pointer;
+}
+
+.nav__login {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    justify-content: flex-start;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-form {
+    display: none;
+  }
+
+  .nav-search-btn-2 {
+    display: inline;
+    margin-left: 3rem;
+    padding: 0 1rem;
+    border: 0;
+    font-size: 1.5rem;
+  }
+}

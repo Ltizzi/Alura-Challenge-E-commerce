@@ -19,6 +19,10 @@
   width: 15%;
 }
 
+.home__contacto-logo-2 {
+  display: none;
+}
+
 .home__contacto-list {
   padding: 2rem 2rem;
   text-align: left;
@@ -65,4 +69,64 @@
 
 .footer__footer {
   background: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .home__contacto-logo {
+    display: none;
+  }
+
+  .home__contacto-logo-2 {
+    display: inline;
+  }
+
+  .home__contacto {
+    padding: 1rem 0;
+  }
+
+  .home__contacto-form {
+    height: auto;
+  }
+
+  .contacto__submit {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__contacto {
+    padding: 1rem 0;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .home__contacto-list {
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .footer__list {
+    width: 100%;
+  }
+
+  .footer__list-item {
+    width: 100%;
+  }
+
+  .home__contacto-form {
+    justify-content: center;
+    height: auto;
+    margin: 0 2rem;
+    width: 100%;
+  }
+
+  .contacto__form-title {
+    text-align: center;
+  }
+  .contacto__submit {
+    font-size: 0.8rem;
+    width: 10rem;
+  }
 }

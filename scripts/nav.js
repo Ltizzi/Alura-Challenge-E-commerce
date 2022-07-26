@@ -29,7 +29,10 @@ const navTemplate = () => {
       </form>
     </li>
   </ul>
-  <button class="btn nav-btn"><a href="./login.html" class="nav__login">Login</a></button>`;
+  <a href="./login.html" class="nav__login"><button class="btn nav-btn">Login</button></a>
+  <button class="btn-light nav-search-btn-2">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>`;
 };
 
 const navTemplateSinLog = () => {

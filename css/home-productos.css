@@ -12,14 +12,15 @@
   flex-direction: row;
   justify-content: space-between;
   grid-area: "rubro";
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
 }
 
 .home__productos-title {
   font-size: 1.6rem;
   font-weight: 600;
+  margin-left: -4rem;
 }
 
 .home__productos-vertodo {
@@ -70,4 +71,48 @@
   color: var(--blue);
   font-weight: 700;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .home__productos-cards {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .producto {
+    width: 13%;
+    margin-right: 0;
+    grid-template-rows: 120px auto;
+  }
+  .producto__foto-pic {
+    width: 100%;
+  }
+
+  .producto__data {
+    height: auto;
+    padding: 0.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__productos-cards {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+  .producto {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    grid-template-rows: 200px auto;
+  }
+  .producto__foto-pic {
+    width: auto;
+    height: auto;
+  }
+
+  .producto__data {
+    height: auto;
+    padding: 0.1rem;
+  }
 }

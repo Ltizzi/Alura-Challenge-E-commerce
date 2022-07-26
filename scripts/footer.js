@@ -7,6 +7,9 @@ const templateFooter = () => {
     </div>
     <div class="home__contacto-list">
       <ul class="footer__list">
+      <div class="home__contacto-logo-2">
+      <img src="assets/Logo.png" alt="" />
+    </div>
         <li class="footer__list-item">Quienes somos</li>
         <li class="footer__list-item">Politica de privacidad</li>
         <li class="footer__list-item">Programa de fidelidad</li>

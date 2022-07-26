@@ -33,3 +33,20 @@
   font-size: 1rem;
   border-radius: 2px;
 }
+
+@media screen and (max-width: 1000px) {
+  .home__banner {
+    height: auto;
+    background-position: right;
+  }
+
+  .home__banner-inside {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home__banner {
+    width: auto;
+  }
+}

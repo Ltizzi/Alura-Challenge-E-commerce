@@ -39,3 +39,32 @@
   color: var(--gray);
   font-weight: 700;
 }
+
+@media screen and (max-width: 1000px) {
+  .producto__detalle {
+    margin: 0 1rem;
+    justify-content: space-between;
+    padding: 3rem 0;
+  }
+
+  .fondo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .producto__detalle {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .producto__detale-pic {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .producto__detalle-txt {
+    text-align: left;
+    margin: 2rem auto;
+  }
+}
