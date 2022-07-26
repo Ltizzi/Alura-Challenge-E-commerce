@@ -1,8 +1,8 @@
 export const productos = [
   {
     id: 1,
-    nombre: "Cenicero Stormtrooper",
-    precio: 12.0,
+    nombre: "Taza Stormtrooper",
+    precio: 11.99,
     descripcion:
       "Un cenicero simple para depositar tus cenizas en la cabeza del Imperio",
     categoria: "Star Wars",
@@ -11,7 +11,7 @@ export const productos = [
   {
     id: 2,
     nombre: "Adorno Vader",
-    precio: 8.5,
+    precio: 8.49,
     descripcion: "Adornos cabezones de figuras del Imperio",
     categoria: "Star Wars",
     picture: "star-wars2.png",
@@ -19,7 +19,7 @@ export const productos = [
   {
     id: 3,
     nombre: "Arte Yoda",
-    precio: 25.0,
+    precio: 24.99,
     descripcion:
       "Cuadro naranja con el maestro Yoda. Para adornar tu cuarto y espantar futuras novias",
     categoria: "Star Wars",
@@ -28,7 +28,7 @@ export const productos = [
   {
     id: 4,
     nombre: "Arte Stormtrooper",
-    precio: 30.0,
+    precio: 29.99,
     descripcion:
       "Espero que el que cuelgue este cuadro tenga más punteria que el retratado",
     categoria: "Star Wars",
@@ -37,7 +37,7 @@ export const productos = [
   {
     id: 5,
     nombre: "Muñeco Grogu",
-    precio: 45.0,
+    precio: 44.99,
     descripcion:
       "Baby Yoda. La gran figura de El Mandalorian. Le parece tierno hasta a tu vieja",
     categoria: "Star Wars",
@@ -46,7 +46,7 @@ export const productos = [
   {
     id: 6,
     nombre: "Arte Kylo Ren",
-    precio: 27.0,
+    precio: 26.99,
     descripcion: "Solo apto para emos fans de star wars",
     categoria: "Star Wars",
     picture: "star-wars6.png",
@@ -54,7 +54,7 @@ export const productos = [
   {
     id: 7,
     nombre: "Xbox gamepad",
-    precio: 50.0,
+    precio: 49.99,
     descripcion:
       "Un clásico de la consola y de la PC. Mucho más lindo que el de la PS",
     categoria: "Consolas",
@@ -63,7 +63,7 @@ export const productos = [
   {
     id: 8,
     nombre: "Playstation 5",
-    precio: 540.0,
+    precio: 539.99,
     descripcion: "Consola de última generación de Sony.",
     categoria: "Consolas",
     picture: "console2.png",
@@ -71,7 +71,7 @@ export const productos = [
   {
     id: 9,
     nombre: "NES mini",
-    precio: 120.0,
+    precio: 119.99,
     descripcion:
       "Recreación actual de la clásica consola de 8bits. Con todos los clásicos integrados, HDMI y USB",
     categoria: "Consolas",
@@ -80,7 +80,7 @@ export const productos = [
   {
     id: 10,
     nombre: "Nintendo Switch",
-    precio: 360.0,
+    precio: 359.99,
     descripcion:
       "La última consola de Nintendo: juga portatil o conectado a la tele",
     categoria: "Consolas",
@@ -89,7 +89,7 @@ export const productos = [
   {
     id: 11,
     nombre: "Xbox One",
-    precio: 490.0,
+    precio: 489.99,
     descripcion: "Consola de última generación de Microsoft.",
     categoria: "Consolas",
     picture: "console5.png",
@@ -97,7 +97,7 @@ export const productos = [
   {
     id: 12,
     nombre: "Gameboy Retro",
-    precio: 120.0,
+    precio: 124.99,
     descripcion: "Consola portatil con la que jugaba tu papito",
     categoria: "Consolas",
     picture: "console6.png",
@@ -140,7 +140,7 @@ export const productos = [
   {
     id: 17,
     nombre: "VR",
-    precio: 400.0,
+    precio: 399.99,
     descripcion:
       "No entendemos si son los anteojos o la remera de los muppets, como sea este producto es top",
     categoria: "Diversos",

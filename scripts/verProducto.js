@@ -77,6 +77,9 @@ const renderRelacionados = () => {
 };
 
 const renderVerProducto = () => {
+  const titulo = document.querySelector(".title");
+  let prod = fetchData();
+  titulo.innerHTML = `AluraGeek |  ${prod.nombre}`;
   renderNav();
   renderProductoDetalle();
   renderRelacionados();

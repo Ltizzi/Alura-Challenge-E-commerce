@@ -25,6 +25,7 @@
 .home__productos-vertodo {
   color: var(--blue);
   font-weight: 600;
+  text-decoration: none;
 }
 
 .home__productos-cards {

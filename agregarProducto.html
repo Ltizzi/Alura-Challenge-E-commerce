@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek - Agregar Producto</title>
+    <script
+      src="https://kit.fontawesome.com/1db83e4e85.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/agregar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    <section class="agregar-producto">
+      <form class="agregar__form">
+        <input
+          type="text"
+          class="agregar__form-input"
+          placeholder="URL de imagen"
+        />
+        <input
+          type="text"
+          class="agregar__form-input"
+          placeholder="Categoria"
+        />
+        <input
+          type="text"
+          class="agregar__form-input"
+          placeholder="Nombre del producto"
+        />
+        <input
+          type="number"
+          class="agregar__form-input"
+          placeholder="Precio del producto"
+        />
+        <textarea id="about" class="agregar__form-textarea"></textarea>
+        <input
+          type="submit"
+          class="btn-blue agregar__form-btn"
+          value="Agregar producto"
+        />
+      </form>
+    </section>
+    <footer class="footer"></footer>
+    <script type="module" src="../scripts/addProduct.js"></script>
+  </body>
+</html>

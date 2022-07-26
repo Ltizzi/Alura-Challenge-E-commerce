@@ -4,14 +4,15 @@
 .producto__detalle {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   margin: 0 7rem;
   padding: 3rem 0;
 }
 
 .producto__detale-pic {
   width: 50%;
-  object-fit: fill;
+  height: 20rem;
+  object-fit: contain;
 }
 
 .producto__detalle-txt {
