@@ -34,7 +34,7 @@ const fetchData = () => {
 const renderProductoDetalle = () => {
   const prodDom = document.querySelector(".producto__detalle");
   let producto = fetchData();
-  prodDom.innerHTML = `   <img src="../assets/${producto.picture}" alt="Imagen del producto" class="producto__detale-pic"/>
+  prodDom.innerHTML = `   <img src="./assets/${producto.picture}" alt="Imagen del producto" class="producto__detale-pic"/>
   <div class="producto__detalle-txt">
     <h2 class="producto__detale-title">${producto.nombre}</h2>
     <p class="producto__detalle-precio">$${producto.precio}</p>

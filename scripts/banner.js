@@ -12,5 +12,5 @@ const bannerTemplate = (title, subtitle, boton) => {
 
 export const bannerCreator = (title, subtitle, boton, image) => {
   banner.innerHTML = bannerTemplate(title, subtitle, boton);
-  banner.style.background = `url("../assets/${image}")`;
+  banner.style.background = `url("./assets/${image}")`;
 };
