@@ -48,3 +48,14 @@ html {
   flex-direction: column;
   margin: 0 auto;
 }
+
+.exito {
+  height: 50vh;
+  text-align: center;
+}
+
+.exito-title {
+  color: forestgreen;
+  font-size: 3rem;
+  margin: 4rem 0;
+}

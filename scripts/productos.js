@@ -19,7 +19,21 @@ export const getProdById = (id) => {
 
 //devuelve un array de productos de una misma caategoria
 export const getProductosByType = (rubro) => {
-  let productosByRubro = [];
+  var productosByRubro = [];
+
+  for (let producto of productos) {
+    if (producto.categoria === rubro) {
+      productosByRubro.push(producto);
+    }
+    if (productosByRubro.length === 6) {
+      break;
+    }
+  }
+  return productosByRubro;
+};
+
+const getAllProductsByType = (rubro) => {
+  var productosByRubro = [];
   productos.forEach((producto) => {
     if (producto.categoria === rubro) {
       productosByRubro.push(producto);

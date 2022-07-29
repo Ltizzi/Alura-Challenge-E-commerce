@@ -162,8 +162,13 @@ let productos2 = [
 ];
 
 productos = await clientService.listaProductos();
+
 while (!productos) {
-  productos = productos2;
+  if (localStorage.getItem("productos")) {
+    productos = localStorage.getItem("productos");
+  } else {
+    productos = productos2;
+  }
 }
 
-console.log(productos);
+localStorage.setItem("productos", productos);
