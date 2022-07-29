@@ -1,4 +1,7 @@
-export const productos = [
+import { clientService } from "./controller.js";
+export let productos = [];
+
+let productos2 = [
   {
     id: 1,
     nombre: "Taza Stormtrooper",
@@ -156,3 +159,10 @@ export const productos = [
     picture: "diversos6.png",
   },
 ];
+
+productos = await clientService.listaProductos();
+while (!productos) {
+  productos = productos2;
+}
+
+console.log(productos);
