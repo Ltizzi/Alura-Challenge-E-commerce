@@ -18,7 +18,7 @@ export const getProdById = (id) => {
 };
 
 //devuelve un array de productos de una misma caategoria
-const getProductosByType = (rubro) => {
+export const getProductosByType = (rubro) => {
   let productosByRubro = [];
   productos.forEach((producto) => {
     if (producto.categoria === rubro) {
@@ -35,7 +35,7 @@ export const crearProducto = (id) => {
   producto.classList.add("producto");
 
   producto.innerHTML = `<div class="producto__foto">
-  <img src="./assets/${objProd.picture}" alt="imagen del producto ${objProd.nombre}" class="producto__foto-pic" />
+  <img src="${objProd.picture}" alt="imagen del producto ${objProd.nombre}" class="producto__foto-pic" />
 </div>
 <div class="producto__data" id="${objProd.id}">
   <p class="producto__nombre">${objProd.nombre}</p>
@@ -65,4 +65,12 @@ export const generarRowTemplate = (rubro) => {
   });
 
   return row;
+};
+
+export const productoService = {
+  generarRowTemplate,
+  crearProducto,
+  getProdById,
+  getProductosByType,
+  insertarProductos,
 };

@@ -25,35 +25,141 @@
     <nav class="navbar"></nav>
     <section class="agregar-producto">
       <form class="agregar__form">
-        <input
-          type="text"
-          class="agregar__form-input"
-          placeholder="URL de imagen"
-        />
-        <input
-          type="text"
-          class="agregar__form-input"
-          placeholder="Categoria"
-        />
-        <input
+        <div class="input-container">
+          <input
+            type="text"
+            class="agregar__form-input"
+            placeholder="URL de imagen"
+            data-tipo="picture"
+            required
+            pattern="^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png)$
+          "
+            minlength="10"
+          />
+          <span class="input-message-error"></span>
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            class="agregar__form-input"
+            placeholder="Categoria"
+            data-tipo="categoria"
+            required
+            minlength="4"
+            maxlength="10"
+            pattern="[\s\w]{4,10}"
+          />
+          <span class="input-message-error"></span>
+        </div>
+        <div class="input-container">
+          <input
           type="text"
           class="agregar__form-input"
           placeholder="Nombre del producto"
+          data-tipo="nombre"
+          required
+          minlength="4"
+          maxlength="20"
+          pattern="[\s\w]{4,20}"
         />
-        <input
+        <span class="input-message-error"></span>
+        </div>
+       
+        <div class="input-container">
+          <input
           type="number"
           class="agregar__form-input"
           placeholder="Precio del producto"
+          data-tipo="precio"
+          required
+          minlength="3"
+          maxlength="7"
+          pattern="[\d\.]{3,7}"
         />
-        <textarea id="about" class="agregar__form-textarea"></textarea>
-        <input
+        <span class="input-message-error"></span>
+        </div>
+    
+        <div class="input-container">
+          <input
+          id="about"
+          class="agregar__form-textarea"
+          maxlength="120"
+          required
+          data-tipo="descripcion"
+        ></input>
+        <span class="input-message-error"></span>
+        </div>
+        <div class="input-container">
+          <input
           type="submit"
           class="btn-blue agregar__form-btn"
           value="Agregar producto"
         />
+        </div>
+       
       </form>
     </section>
-    <footer class="footer"></footer>
+    <footer class="footer">
+
+      <section class="home__contacto">
+        <div class="home__contacto-logo">
+          <img src="assets/Logo.png" alt="" />
+        </div>
+        <div class="home__contacto-list">
+          <ul class="footer__list">
+            <div class="home__contacto-logo-2">
+              <img src="assets/Logo.png" alt="" />
+            </div>
+            <li class="footer__list-item">Quienes somos</li>
+            <li class="footer__list-item">Politica de privacidad</li>
+            <li class="footer__list-item">Programa de fidelidad</li>
+            <li class="footer__list-item">Nuestras tiendas</li>
+            <li class="footer__list-item">Quiero ser franquiciado</li>
+            <li class="footer__list-item">Anuncie aquí</li>
+          </ul>
+        </div>
+        <div class="home__contacto-form">
+          <form action="" class="contacto__form">
+            <h3 class="contacto__form-title">Hable con nosotros</h3>
+            <div class="input-container">
+              <input
+                type="text"
+                class="contacto__form-nombre"
+                placeholder="nombre"
+                required
+                minlength="1"
+                maxlength="40"
+                data-tipo="name"
+              />
+              <span class="input-message-error"></span>
+            </div>
+
+            <div class="input-container">
+              <input
+                class="contacto__mensaje"
+                type="text"
+                required
+                minlength="1"
+                maxlength="120"
+                data-tipo="mensaje"
+              />
+              <span class="input-message-error"></span>
+            </div>
+
+            <input
+              type="submit"
+              class="btn-blue contacto__submit"
+              value="Enviar mensaje"
+            />
+          </form>
+        </div>
+      </section>
+      <section class="footer__footer">
+        <p class="footer__by">Desarrollado por Leonardo Terlizzi</p>
+        <p class="footer__year">2022</p>
+      </section>
+    </footer>
     <script type="module" src="./scripts/addProduct.js"></script>
+    <script src="./scripts/validaciones.js"></script>
   </body>
 </html>

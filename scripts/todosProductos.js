@@ -10,7 +10,7 @@ console.log(productos);
 const renderCatalogo = () => {
   renderNav("no");
   poblarCatalogo();
-  renderFooter();
+  // renderFooter();
 };
 
 const poblarCatalogo = () => {

@@ -3,7 +3,7 @@ import { renderNav } from "./nav.js";
 
 const renderDom = () => {
   renderNav();
-  renderFooter();
+  // renderFooter();
 };
 
 renderDom();

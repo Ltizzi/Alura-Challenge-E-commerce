@@ -23,8 +23,100 @@
   </head>
   <body>
     <nav class="navbar"></nav>
-    <section class="login"></section>
-    <footer class="footer"></footer>
+    <section class="login">
+      <h3 class="login__title">Iniciar Sesion</h3>
+      <form action="" class="login__form">
+        <div class="input-container">
+          <input
+            type="email"
+            class="login__form-input"
+            placeholder="Escriba su correo electrónico"
+            required
+            data-tipo="email"
+          />
+          <span class="input-message-error"></span>
+        </div>
+
+        <div class="input-container">
+          <input
+            type="password"
+            class="login__form-input"
+            placeholder="Escriba su contraseña"
+            required
+            minlength="4"
+            maxlength="20"
+            data-tipo="password"
+          />
+          <span class="input-message-error"></span>
+        </div>
+
+        <input
+          type="submit"
+          value="Entrar"
+          class="btn-blue login__form-submit"
+        />
+      </form>
+    </section>
+    <footer class="footer">
+      <section class="home__contacto">
+        <div class="home__contacto-logo">
+          <img src="assets/Logo.png" alt="" />
+        </div>
+        <div class="home__contacto-list">
+          <ul class="footer__list">
+            <div class="home__contacto-logo-2">
+              <img src="assets/Logo.png" alt="" />
+            </div>
+            <li class="footer__list-item">Quienes somos</li>
+            <li class="footer__list-item">Politica de privacidad</li>
+            <li class="footer__list-item">Programa de fidelidad</li>
+            <li class="footer__list-item">Nuestras tiendas</li>
+            <li class="footer__list-item">Quiero ser franquiciado</li>
+            <li class="footer__list-item">Anuncie aquí</li>
+          </ul>
+        </div>
+        <div class="home__contacto-form">
+          <form action="" class="contacto__form">
+            <h3 class="contacto__form-title">Hable con nosotros</h3>
+            <div class="input-container">
+              <input
+                type="text"
+                class="contacto__form-nombre"
+                placeholder="nombre"
+                required
+                minlength="1"
+                maxlength="40"
+                data-tipo="name"
+              />
+              <span class="input-message-error"></span>
+            </div>
+
+            <div class="input-container">
+              <input
+                class="contacto__mensaje"
+                type="text"
+                required
+                minlength="1"
+                maxlength="120"
+                data-tipo="mensaje"
+              />
+              <span class="input-message-error"></span>
+            </div>
+
+            <input
+              type="submit"
+              class="btn-blue contacto__submit"
+              value="Enviar mensaje"
+            />
+          </form>
+        </div>
+      </section>
+      <section class="footer__footer">
+        <p class="footer__by">Desarrollado por Leonardo Terlizzi</p>
+        <p class="footer__year">2022</p>
+      </section>
+    </footer>
     <script type="module" src="./scripts/login.js"></script>
+    <script src="./scripts/validaciones.js"></script>
   </body>
 </html>

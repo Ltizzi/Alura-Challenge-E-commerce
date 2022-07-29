@@ -50,8 +50,18 @@ const editarProducto = (
     .catch((err) => console.log(err));
 };
 
+const borrarProducto = (id) => {
+  return fetch(
+    `https://ltizzi-alura-geek.herokuapp.com/api/producto/delete?id=${id}`,
+    {
+      method: "DELETE",
+    }
+  );
+};
+
 export const clientService = {
   listaProductos,
   crearProducto,
   editarProducto,
+  borrarProducto,
 };

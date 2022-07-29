@@ -1,4 +1,5 @@
 import { clientService } from "./controller.js";
+
 export let productos = [];
 
 let productos2 = [
@@ -9,7 +10,7 @@ let productos2 = [
     descripcion:
       "Un cenicero simple para depositar tus cenizas en la cabeza del Imperio",
     categoria: "Star Wars",
-    picture: "star-wars.png",
+    picture: "./assets/star-wars.png",
   },
   {
     id: 2,
@@ -17,7 +18,7 @@ let productos2 = [
     precio: 8.49,
     descripcion: "Adornos cabezones de figuras del Imperio",
     categoria: "Star Wars",
-    picture: "star-wars2.png",
+    picture: "./assets/star-wars2.png",
   },
   {
     id: 3,
@@ -26,7 +27,7 @@ let productos2 = [
     descripcion:
       "Cuadro naranja con el maestro Yoda. Para adornar tu cuarto y espantar futuras novias",
     categoria: "Star Wars",
-    picture: "star-wars3.png",
+    picture: "./assets/star-wars3.png",
   },
   {
     id: 4,
@@ -35,7 +36,7 @@ let productos2 = [
     descripcion:
       "Espero que el que cuelgue este cuadro tenga más punteria que el retratado",
     categoria: "Star Wars",
-    picture: "star-wars4.png",
+    picture: "./assets/star-wars4.png",
   },
   {
     id: 5,
@@ -44,7 +45,7 @@ let productos2 = [
     descripcion:
       "Baby Yoda. La gran figura de El Mandalorian. Le parece tierno hasta a tu vieja",
     categoria: "Star Wars",
-    picture: "star-wars5.png",
+    picture: "./assets/star-wars5.png",
   },
   {
     id: 6,
@@ -52,7 +53,7 @@ let productos2 = [
     precio: 26.99,
     descripcion: "Solo apto para emos fans de star wars",
     categoria: "Star Wars",
-    picture: "star-wars6.png",
+    picture: "./assets/star-wars6.png",
   },
   {
     id: 7,
@@ -61,7 +62,7 @@ let productos2 = [
     descripcion:
       "Un clásico de la consola y de la PC. Mucho más lindo que el de la PS",
     categoria: "Consolas",
-    picture: "console.png",
+    picture: "./assets/console.png",
   },
   {
     id: 8,
@@ -69,7 +70,7 @@ let productos2 = [
     precio: 539.99,
     descripcion: "Consola de última generación de Sony.",
     categoria: "Consolas",
-    picture: "console2.png",
+    picture: "./assets/console2.png",
   },
   {
     id: 9,
@@ -78,7 +79,7 @@ let productos2 = [
     descripcion:
       "Recreación actual de la clásica consola de 8bits. Con todos los clásicos integrados, HDMI y USB",
     categoria: "Consolas",
-    picture: "console3.png",
+    picture: "./assets/console3.png",
   },
   {
     id: 10,
@@ -87,7 +88,7 @@ let productos2 = [
     descripcion:
       "La última consola de Nintendo: juga portatil o conectado a la tele",
     categoria: "Consolas",
-    picture: "console4.png",
+    picture: "./assets/console4.png",
   },
   {
     id: 11,
@@ -95,7 +96,7 @@ let productos2 = [
     precio: 489.99,
     descripcion: "Consola de última generación de Microsoft.",
     categoria: "Consolas",
-    picture: "console5.png",
+    picture: "./assets/console5.png",
   },
   {
     id: 12,
@@ -103,7 +104,7 @@ let productos2 = [
     precio: 124.99,
     descripcion: "Consola portatil con la que jugaba tu papito",
     categoria: "Consolas",
-    picture: "console6.png",
+    picture: "./assets/console6.png",
   },
   {
     id: 13,
@@ -112,7 +113,7 @@ let productos2 = [
     descripcion:
       "Remera de la consola retro Atari con caracteres orientales. Todos los talles.",
     categoria: "Diversos",
-    picture: "diversos.png",
+    picture: "./assets/diversos.png",
   },
   {
     id: 14,
@@ -120,7 +121,7 @@ let productos2 = [
     precio: 35.99,
     descripcion: "Remera del joystick de la consola Nes. Todos los talles",
     categoria: "Diversos",
-    picture: "diversos2.png",
+    picture: "./assets/diversos2.png",
   },
   {
     id: 15,
@@ -129,7 +130,7 @@ let productos2 = [
     descripcion:
       "Muñeco miniatura de personajes de Sonic El Erizo. NO son rápidos.",
     categoria: "Diversos",
-    picture: "diversos3.png",
+    picture: "./assets/diversos3.png",
   },
   {
     id: 16,
@@ -138,7 +139,7 @@ let productos2 = [
     descripcion:
       "Los relojes alarma que viste en volver al futuro, el día de la marmota y otros",
     categoria: "Diversos",
-    picture: "diversos4.png",
+    picture: "./assets/diversos4.png",
   },
   {
     id: 17,
@@ -147,7 +148,7 @@ let productos2 = [
     descripcion:
       "No entendemos si son los anteojos o la remera de los muppets, como sea este producto es top",
     categoria: "Diversos",
-    picture: "diversos5.png",
+    picture: "./assets/diversos5.png",
   },
   {
     id: 18,
@@ -156,7 +157,7 @@ let productos2 = [
     descripcion:
       "Peluche pokemon de varios tipos. El attack trueno viene por separado",
     categoria: "Diversos",
-    picture: "diversos6.png",
+    picture: "./assets/diversos6.png",
   },
 ];
 
