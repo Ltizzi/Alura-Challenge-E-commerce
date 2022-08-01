@@ -78,18 +78,29 @@
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    padding-bottom: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .nav-item {
+    width: 100%;
   }
 
   /* .nav-form {
     display: none;
   } */
 
-  .nav-search-btn-2 {
-    display: inline;
-    margin-left: 3rem;
-    padding: 0 1rem;
-    border: 0;
-    font-size: 1.5rem;
+  .nav-search {
+    padding-right: 1rem;
+    margin: 0 auto;
+  }
+
+  .nav__login {
+    margin: 1rem auto;
   }
 }
