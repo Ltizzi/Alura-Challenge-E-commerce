@@ -98,7 +98,11 @@
   .home__productos-cards {
     width: 100%;
     margin: 0 auto;
+    margin-left: 0.5rem;
     justify-content: space-around;
+  }
+  .home__productos-title {
+    margin-left: 1rem;
   }
   .producto {
     width: 50%;
@@ -114,5 +118,9 @@
   .producto__data {
     height: auto;
     padding: 0.1rem;
+  }
+
+  .rubro {
+    margin-left: 1rem;
   }
 }

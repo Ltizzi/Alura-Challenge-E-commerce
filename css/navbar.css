@@ -76,6 +76,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .nav-form {
     display: none;
   }

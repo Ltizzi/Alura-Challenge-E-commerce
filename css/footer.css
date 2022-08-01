@@ -71,6 +71,10 @@
   background: white;
 }
 
+.input-container {
+  margin: 0 0;
+}
+
 @media screen and (max-width: 1000px) {
   .home__contacto-logo {
     display: none;

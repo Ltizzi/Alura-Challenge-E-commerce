@@ -41,6 +41,7 @@ td button {
   padding: 2rem;
   border: 2px solid var(--blue);
   box-shadow: 2px 3px 5px black;
+  border-radius: 10px;
 }
 
 .modal__close {
@@ -60,4 +61,11 @@ td button {
 .modal__button {
   padding: 1rem;
   margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .modal__container {
+    top: 20vh;
+    left: 10vw;
+  }
 }
