@@ -34,10 +34,11 @@ const editarProducto = (
     `https://ltizzi-alura-geek.herokuapp.com/api/producto/update?id=${id}`,
     {
       method: "PATCH",
-      header: {
+      headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        id: id,
         nombre: nombre,
         precio: precio,
         descripcion: descripcion,

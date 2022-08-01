@@ -1,0 +1,63 @@
+.manage__main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+}
+
+.manage__tabla {
+  margin: 0 auto;
+}
+
+td {
+  width: 10rem;
+  border: 1px solid var(--blue);
+  padding: 1rem;
+  text-align: left;
+}
+
+.table-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: forestgreen;
+}
+
+td button {
+  border: none;
+  background: none;
+  color: red;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.modal__container {
+  position: fixed;
+  top: 40vh;
+  left: 40vw;
+  background-color: white;
+  padding: 2rem;
+  border: 2px solid var(--blue);
+  box-shadow: 2px 3px 5px black;
+}
+
+.modal__close {
+  display: none;
+}
+
+.modal__title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal__text {
+  text-align: center;
+}
+
+.modal__button {
+  padding: 1rem;
+  margin: 1rem 0;
+}

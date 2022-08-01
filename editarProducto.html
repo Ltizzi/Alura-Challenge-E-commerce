@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alura Geek | Administración</title>
+    <title>AluraGeek - Agregar Producto</title>
     <script
       src="https://kit.fontawesome.com/1db83e4e85.js"
       crossorigin="anonymous"
@@ -18,9 +18,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/home-productos.css" />
-    <link rel="stylesheet" href="./css/catalogo.css" />
-    <link rel="stylesheet" href="./css/admin.css" />
+    <link rel="stylesheet" href="./css/agregar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
@@ -48,39 +46,97 @@
           </form>
         </li>
       </ul>
-      <a href="./login.html" class="nav__login"
-        ><button class="btn nav-btn">Login</button></a
+      <a href="./admin-list.html" class="nav__login"
+        ><button class="btn nav-btn">Manejar Productos</button></a
       >
       <button class="btn-light nav-search-btn-2">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </nav>
-
-    <section class="manage__main">
-      <table class="manage__tabla">
-        <thead>
-          <td>Nombre</td>
-          <td>Categoria</td>
-          <td>Control</td>
-        </thead>
-        <tbody data-table></tbody>
-      </table>
+    <section class="editar-producto">
+        <div class="edit__producto">
+        
+        </div>
+      <form class="agregar__form">
+        <div class="input-container">
+          <!-- pattern="^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png)$ -->
+          <input
+            type="url"
+            class="agregar__form-input to-validate"
+            placeholder="URL de imagen"
+            id="picture"
+            data-tipo="picture"
+            required
+            minlength="10"
+          />
+          <span class="input-message-error"></span>
+        </div>
+        <div class="input-container">
+          <input
+            type="text"
+            class="agregar__form-input to-validate"
+            placeholder="Categoria"
+            id="categoria"
+            data-tipo="categoria"
+            required
+            minlength="4"
+            maxlength="10"
+            pattern="[\s\wñ]{4,10}"
+          />
+          <span class="input-message-error"></span>
+        </div>
+        <div class="input-container">
+          <input
+          type="text"
+          class="agregar__form-input to-validate"
+          placeholder="Nombre del producto"
+          data-tipo="nombre"
+          id="nombre"
+          required
+          minlength="4"
+          maxlength="20"
+          pattern="[\s\wñ]{4,20}"
+        />
+        <span class="input-message-error"></span>
+        </div>
+       
+        <div class="input-container">
+          <input
+          type="text"
+          id="precio"
+          class="agregar__form-input to-validate"
+          placeholder="Precio del producto"
+          data-tipo="precio"
+          required
+          minlength="3"
+          maxlength="7"
+          pattern="[\d\.]{3,7}"
+        />
+        <span class="input-message-error"></span>
+        </div>
+    
+        <div class="input-container">
+          <input
+          id="descripcion"
+          class="agregar__form-textarea to-validate"
+          maxlength="120"
+          required
+          data-tipo="descripcion"
+        ></input>
+        <span class="input-message-error"></span>
+        </div>
+        <div class="input-container">
+          <input
+          type="submit"
+          class="btn-blue agregar__form-btn"
+          value="Editar producto"
+        />
+        </div>
+       
+      </form>
     </section>
-
-    <div class="modal__container modal__close">
-      <h2 class="modal__title">Eliminar</h2>
-      <p class="modal__text">¿Deseas continuar?</p>
-      <div class="modal__button-container">
-        <button class="modal__button btn-blue modal__button--confirm">
-          Eliminar
-        </button>
-        <button class="modal__button btn-blue modal__button--cancel">
-          No eliminar
-        </button>
-      </div>
-    </div>
-
     <footer class="footer">
+
       <section class="home__contacto">
         <div class="home__contacto-logo">
           <img src="assets/Logo.png" alt="" />
@@ -104,7 +160,7 @@
             <div class="input-container">
               <input
                 type="text"
-                class="contacto__form-nombre"
+                class="contacto__form-nombre to-validate"
                 placeholder="nombre"
                 required
                 minlength="1"
@@ -116,7 +172,7 @@
 
             <div class="input-container">
               <input
-                class="contacto__mensaje"
+                class="contacto__mensaje to-validate"
                 type="text"
                 required
                 minlength="1"
@@ -139,8 +195,8 @@
         <p class="footer__year">2022</p>
       </section>
     </footer>
-    <script src="./scripts/home.js" type="module"></script>
+    <script type="module" src="./scripts/editProduct.js"></script>
     <script src="./scripts/validaciones.js"></script>
-    <script type="module" src="./scripts/manageProducts.js"></script>
+    <script src="./scripts/home.js" type="module"></script>
   </body>
 </html>

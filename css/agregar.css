@@ -41,6 +41,21 @@
   width: 22rem;
 }
 
+.edit__producto {
+  text-align: center;
+}
+
+.edit__producto h2 {
+  font-size: 2rem;
+}
+.edit__producto ul {
+  padding: 1rem;
+}
+
+.edit__producto ul li {
+  padding-bottom: 0.5rem;
+}
+
 @media screen and (max-width: 1000px) {
   .agregar__form {
     width: auto;
