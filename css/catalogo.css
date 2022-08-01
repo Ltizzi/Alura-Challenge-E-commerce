@@ -71,6 +71,18 @@
   text-decoration: none;
 }
 
+.search-invalid {
+  border: 2px solid;
+  border-color: red;
+  padding: 1rem;
+}
+
+.error-msg {
+  color: red;
+  padding: 1rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 1000px) {
   .catalogo__header {
     width: 90%;

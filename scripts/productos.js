@@ -87,4 +87,5 @@ export const productoService = {
   getProdById,
   getProductosByType,
   insertarProductos,
+  getAllProductsByType,
 };

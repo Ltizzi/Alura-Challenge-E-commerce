@@ -6,7 +6,7 @@ const bannerTemplate = (title, subtitle, boton) => {
     <h5 class="home__banner-subtitle">
       ${subtitle}
     </h5>
-    <button class="btn-blue home__banner-btn">${boton}</button>
+    <button class="btn-blue home__banner-btn" id="btn-banner">${boton}</button>
   </div>`;
 };
 
