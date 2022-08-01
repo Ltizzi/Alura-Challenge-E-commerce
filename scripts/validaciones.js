@@ -1,4 +1,4 @@
-const inputs = document.querySelectorAll("input");
+const inputs = document.querySelectorAll(".to-validate");
 
 function validar(input) {
   console.log("asdasd");

@@ -160,15 +160,6 @@ let productos2 = [
     picture: "./assets/diversos6.png",
   },
 ];
-
+productos = localStorage.getItem("productos") || productos2;
 productos = await clientService.listaProductos();
-
-while (!productos) {
-  if (localStorage.getItem("productos")) {
-    productos = localStorage.getItem("productos");
-  } else {
-    productos = productos2;
-  }
-}
-
 localStorage.setItem("productos", productos);

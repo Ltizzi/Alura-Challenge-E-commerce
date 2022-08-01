@@ -1,10 +1,9 @@
-import { renderNav } from "./nav.js";
+// import { renderNav } from "./nav.js";
 import { clientService } from "./controller.js";
 
 const submit = document.querySelector(".agregar__form-btn");
 
 const renderDom = () => {
-  renderNav();
   // renderFooter();
 };
 
@@ -35,6 +34,6 @@ const addProduct = async (event) => {
   categoria = "";
 };
 
-renderDom();
+//renderDom();
 
 submit.addEventListener("click", addProduct);

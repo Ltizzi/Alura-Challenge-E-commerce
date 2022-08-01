@@ -1,6 +1,6 @@
-import { renderFooter } from "./footer.js";
-import { renderNav } from "./nav.js";
-import { productos } from "./objProductos.js";
+// import { renderFooter } from "./footer.js";
+// import { renderNav } from "./nav.js";
+// import { productos } from "./objProductos.js";
 import { productoService } from "./productos.js";
 
 const fetchData = () => {
@@ -32,10 +32,9 @@ const renderVerProducto = () => {
   const titulo = document.querySelector(".title");
   let prod = fetchData();
   titulo.innerHTML = `AluraGeek |  ${prod.nombre}`;
-  renderNav();
+
   renderProductoDetalle();
   renderRelacionados();
-  renderFooter();
 };
 
 renderVerProducto();

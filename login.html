@@ -22,7 +22,37 @@
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
-    <nav class="navbar"></nav>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="index.html" class="nav__home">
+            <img
+              src="./assets/Logo.png"
+              alt="Logo AluraGeek"
+              title="Ir a home"
+              class="nav-icon"
+          /></a>
+        </li>
+        <li class="nav-item">
+          <form action="" class="nav-form">
+            <input
+              type="text"
+              class="nav-search"
+              placeholder="¿Qué desea buscar?"
+            />
+            <button class="btn-light nav-search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </li>
+      </ul>
+      <a href="./login.html" class="nav__login"
+        ><button class="btn nav-btn">Login</button></a
+      >
+      <button class="btn-light nav-search-btn-2">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </nav>
     <section class="login">
       <h3 class="login__title">Iniciar Sesion</h3>
       <form action="" class="login__form">
@@ -81,7 +111,7 @@
             <div class="input-container">
               <input
                 type="text"
-                class="contacto__form-nombre"
+                class="contacto__form-nombre to-validate"
                 placeholder="nombre"
                 required
                 minlength="1"
@@ -93,7 +123,7 @@
 
             <div class="input-container">
               <input
-                class="contacto__mensaje"
+                class="contacto__mensaje to-validate"
                 type="text"
                 required
                 minlength="1"
@@ -118,5 +148,6 @@
     </footer>
     <script type="module" src="./scripts/login.js"></script>
     <script src="./scripts/validaciones.js"></script>
+    <script src="./scripts/home.js" type="module"></script>
   </body>
 </html>

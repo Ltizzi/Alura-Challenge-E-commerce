@@ -1,7 +1,7 @@
-import { renderFooter } from "./footer.js";
-import { renderNav } from "./nav.js";
+// import { renderFooter } from "./footer.js";
+// import { renderNav } from "./nav.js";
 
-const login = document.querySelector(".login");
+// const login = document.querySelector(".login");
 
 // const loginTemplate = () => {
 //   return `<h3 class="login__title">Iniciar Sesion</h3>
@@ -34,10 +34,10 @@ const login = document.querySelector(".login");
 //     </form>`;
 // };
 
-const renderLogin = () => {
-  renderNav("no");
-  // login.innerHTML = loginTemplate();
-  // renderFooter();
-};
+// const renderLogin = () => {
+//   // renderNav("no");
+//   // login.innerHTML = loginTemplate();
+//   // renderFooter();
+// };
 
-renderLogin();
+// renderLogin();

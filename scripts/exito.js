@@ -1,5 +1,5 @@
-import { renderNav } from "./nav.js";
+// import { renderNav } from "./nav.js";
 
 const login = document.querySelector(".login");
 
-renderNav("no");
+//renderNav("no");
