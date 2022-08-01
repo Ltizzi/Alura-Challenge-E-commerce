@@ -101,14 +101,19 @@
   .home__contacto {
     padding: 1rem 0;
     flex-direction: column;
+    width: 100%;
     margin: 0 auto;
   }
 
+  .home__contacto-logo-2 {
+    margin-left: 2rem;
+  }
+
   .home__contacto-list {
-    text-align: center;
+    /* text-align: center; */
     padding: 0;
     width: 100%;
-    margin: 1rem 0;
+    margin: 1rem auto;
   }
 
   .footer__list {
@@ -117,12 +122,20 @@
 
   .footer__list-item {
     width: 100%;
+    margin-left: 2rem;
   }
 
   .home__contacto-form {
-    justify-content: center;
+    justify-content: space-around;
     height: auto;
-    margin: 0 2rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contacto__form {
+    margin: 0 auto;
+  }
+
+  .input-container {
     width: 100%;
   }
 
